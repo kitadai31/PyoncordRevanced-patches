@@ -28,15 +28,11 @@ dependencies {
     implementation(libs.smali)
 }
 
-kotlin {
-    jvmToolchain(11)
-}
-
 tasks {
     withType(Jar::class) {
         manifest {
-            attributes["Name"] = "ReVanced Patches template"
-            attributes["Description"] = "Patches template for ReVanced."
+            attributes["Name"] = "PyoncordReVanced Patches"
+            attributes["Description"] = "PyonXposed port with ReVanced"
             attributes["Version"] = version
             attributes["Timestamp"] = System.currentTimeMillis().toString()
             attributes["Source"] = "git@github.com:revanced/revanced-patches-template.git"
